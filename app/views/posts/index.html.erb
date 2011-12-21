@@ -1,0 +1,15 @@
+<% @posts.each do |post| %>
+<h2><%= link_to "#{post.title}",post%></h2>
+<p class="post-info">Posted by <a href="/"><%= post.name %></a> </p>
+<p>
+<%= post.content %>
+</p>
+<p class="postmeta">    
+        <%= link_to 'Read more', post %>
+        <a href="index.html" class="comments">Comments (<%post.comments.count%>)</a> |        
+        <span class="date">November 17, 2046</span> 
+   
+<% end %>
+<br />
+
+<%= link_to '添加文章', new_post_path %>

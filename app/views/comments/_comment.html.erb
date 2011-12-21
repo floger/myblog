@@ -1,0 +1,13 @@
+<p>
+  <b>留言者：</b>
+  <%=comment.commenter%>
+</p>
+<p>
+  <b>留言内容:</b>
+  <%=comment.body%>
+</p>
+<p>
+ 	<%= link_to "删除留言",[comment.post,comment],
+ 							:confirm => '你确定要删除留言？',
+ 							:method => :delete %>
+</p>

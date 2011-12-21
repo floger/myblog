@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>作者:</b>
+  <%= @post.name %>
+</p>
+
+<p>
+  <b>标题:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+  <b>内容:</b>
+  <%= @post.content %>
+</p>
+<!-- <P>
+	<b>标签:</b>
+	<%= join_tags(@post)%>
+</P> -->
+
+<h2>显示留言</h2>
+<%= render @post.comments %>
+<h2>留言:</h2>
+<%= render "comments/form"%>
+
+<%= link_to '编辑', edit_post_path(@post) %> |
+<%= link_to '返回', posts_path %>

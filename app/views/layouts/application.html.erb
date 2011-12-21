@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<html>
+<head>
+  <title>我的博客</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+ </head>
+<body>
+<div id="wrap">
+
+	 <a name="top"></a>
+	<!-- header -->
+	<div id="header">					
+		
+		<h1 id="logo-text"><a href="/" title="">学习RUBY</a></h1>		
+		<p id="intro">只为寻找真实自我学习ruby的方式</p>				
+		
+		<!-- navigation -->
+		<div  id="nav">
+			<ul>
+			
+				<li id="current"><a href="/">首页</a></li>
+
+				<!-- <li><a href="style.html">Style Demo</a></li> -->
+				<li><a href="/posts">Blog</a></li>
+				<li><a href="index.html">Services</a></li>
+				<li><a href="index.html">Support</a></li>
+				<li><a href="/about">About</a></li>		
+			</ul>		
+		</div>				
+	
+	</div>	
+	<!-- header ends -->
+	
+	<!-- content starts -->
+	<div id="content-outer" class="clear">
+	  <div id="content-wrap" >	
+		
+		<div class="content">
+		
+			<a name="TemplateInfo"></a>
+			
+			<div class="post">
+			
+				<%= flash[:notice]%>
+
+		            <%= yield %>
+			
+			</div>
+			
+			<h2></h2>
+			
+			<p>		
+			</p>			
+						
+			<!-- columns starts -->				
+			<div class="columns">
+			
+				<div class="col">
+			
+					<h3></h3>
+					
+					<p>
+							
+					</p>				
+			
+					<p></p>
+			
+				</div>
+				
+				<div class="col">
+			
+					<h3></h3>
+					<p>
+									
+					</p>
+			
+					<p></p>
+			
+				</div>			
+
+			<!-- columns ends -->	
+			</div>			
+		
+		</div>
+		</div>				
+	<!-- content ends -->	
+	</div>	
+		
+	<!-- footer starts -->	
+	<div id="footer-outer" class="clear"><div id="footer-wrap">				
+		
+		<div class="content">	
+			
+			<!-- columns starts -->
+			<div class="columns">
+			
+				<div class="col">						
+							
+					<h3>Image Gallery </h3>					
+					<p class="thumbs">
+						<a href="index.html"><img src="/assets/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
+						<a href="index.html"><img src="/assets/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
+						<a href="index.html"><img src="/assets/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
+						<a href="index.html"><img src="/assets/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
+						<a href="index.html"><img src="/assets/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
+						<a href="index.html"><img src="/assets/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>	
+						<a href="index.html"><img src="/assets/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
+						<a href="index.html"><img src="/assets/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>													
+						<a href="index.html"><img src="/assets/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
+						<a href="index.html"><img src="/assets/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
+						<a href="index.html"><img src="/assets/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>													
+						<a href="index.html"><img src="/assets/thumb.jpg" width="40" height="40" alt="thumbnail" /></a>
+					</p>	
+					
+					<h3>About</h3>			
+					<p>
+						<a href="index.html"><img src="/assets/gravatar.jpg" width="40" height="40" alt="firefox" class="float-left" /></a>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
+						Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
+						posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum 
+						odio, ac blandit ante orci ut diam.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
+						Cras id urna. <a href="index.html">Learn more...</a>
+					</p>
+					
+					<p class="copyright">
+						&copy;2046 All your copyright info here &nbsp;
+					</p>
+					
+				</div>	
+				
+				<div class="col">
+				
+					<h3>Search</h3>
+					
+					<form id="quick-search" action="index.html" method="get" >
+						<p>
+						<label for="qsearch">Search:</label>
+						<input class="tbox" id="qsearch" type="text" name="qsearch" value="Search..." title="Start typing and hit ENTER" />
+						<input class="btn" alt="Search" type="image" name="searchsubmit" title="Search" src="/assets/search.gif" />
+						</p>
+					</form>	
+				
+					<h3>Resource Links</h3>		
+						
+					<p>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
+						Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
+						posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum 
+						odio, ac blandit ante orci ut diam. <a href="index.html">Read more...</a>
+					</p>
+					
+					<div class="footer-list">
+						<ul>				
+							<li><a href="http://themeforest.net?ref=ealigam">ThemeForest - <span>Your Choice for Site Templates &amp; Wordpress Themes</span></a></li>
+							<li><a href="http://www.cssmania.com/">CSSMania - <span>CSS Design Showcase</span></a></li>
+							<li><a href="http://www.alistapart.com/">AListApart - <span>For People Who Make Websites</span></a></li>
+							<li><a href="http://www.psdtuts.com/">PSDTuts.com - <span>Photoshop Tutorials And Links</span></a></li>
+							<li><a href="http://www.pdphoto.org/">PDPhoto.org - <span>Public Domain Photos</span></a></li>						
+							<li><a href="http://www.freephotos.se/">FreePhotos.se - <span>Free &amp; Public Domain Photos</span></a></li>	
+							<li><a href="http://www.fotolia.com/partner/114283">Fotolia - <span>Free stock images or from $1</span></a></li>						
+							<li><a href="http://www.4templates.com/?aff=ealigam">4templates - <span>Low Cost Hi-Quality Templates</span></a></li>	
+						</ul>	
+					</div>
+					
+				</div>	
+			
+			<!-- columns ends -->	
+			</div>
+				
+		</div>
+		
+	<!-- footer ends -->
+	</div>
+	</div>
+	
+	<div id="footer-bottom">	
+		<p>			
+			<a href="index.html">Home</a> |
+			<a href="index.html">Sitemap</a> |
+			<a href="index.html">RSS Feed</a> |								
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
+	   	<a href="http://validator.w3.org/check/referer">XHTML</a> |			
+			<a href="#top">Top</a>							
+			&nbsp;&nbsp;					
+			Design by : <a href="http://sc.chinaz.com/">CSSK8</a>									
+		</p>				
+	</div>			
+
+<!-- wrap ends -->
+</div>
+</body>
+</html>
