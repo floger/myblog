@@ -3,7 +3,9 @@ Blog::Application.routes.draw do
     resources :comments
   end
 
-  resources :sessions 
+  #resources :sessions 
+
+  match '/auth/:provider/callback', :to => 'sessions#create'
 
 
   #get "home/index"
